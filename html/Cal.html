@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<title>Calculatrice</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="../../FormaLab_HTML_1/css/bootstrap.min.css" >
+</head>
+
+<body >
+        <table >
+            <thead>
+            <tr>
+        <form name="calculatrice">
+                <textarea name="resultat" class="affiche"></textarea> <br> </thead>
+                <tbody>
+                    <br>
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                        <button type="button" class="btn btn-secondary" name="a7" value="7" onClick="ajout('7')" >7</button>
+                        <button type="button" class="btn btn-secondary" name="a8" value="8" onClick="ajout('8')">8</button>
+                        <button type="button" class="btn btn-secondary" name="a9" value="9" onClick="ajout('9')">9</button>
+                        <button type="reset" class="btn btn-primary" name="c" value="C">C</button>
+                        <button type="button" class="btn btn-dark" name="egal" value="=" onClick="calcul()" >=</button>
+                      </div>
+                      <br>
+                      <div class="btn-group mr-2" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-secondary" name="a4" value="4" onClick="ajout('4')">4</button>
+                            <button type="button" class="btn btn-secondary" name="a5" value="5" onClick="ajout('5')">5</button>
+                            <button type="button" class="btn btn-secondary" name="a6" value="6" onClick="ajout('6')">6</button>
+                            <button type="button" class="btn btn-dark" name="a*" value="*" onClick="ajout('*')">*</button>
+                            <button type="button" class="btn btn-dark" name="a/" value="/" onClick="ajout('/')">/</button>
+                          </div>
+                          <br>
+                      <div class="btn-group mr-2" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-secondary" name="a1" value="1" onClick="ajout('1')">1</button>
+                            <button type="button" class="btn btn-secondary" name="a2" value="2" onClick="ajout('2')">2</button>
+                            <button type="button" class="btn btn-secondary" name="a3" value="3" onClick="ajout('3')">3</button>
+                            <button type="button" class="btn btn-dark" name="a-" value="-" onClick="ajout('-')">-</button>
+                            <button type="button" class="btn btn-dark" name="a+" value="+" onClick="ajout('+')">+</button>
+                          </div>
+                          <br>
+                          <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary" name="a," value="." onClick="ajout('.')">.</button>
+                                <button type="button" class="btn btn-secondary" name="a0" value="0" onClick="ajout('0')">0</button>
+                                
+                               
+                              </div>
+        </form>
+    </tr>
+    </tbody>
+</table>
+
+    <script src="../js/Calcul.js" ></script>
+</body>
+</html>
